@@ -67,7 +67,7 @@
 
   /* Secondary & Muted - Soft Blues to complement the Navy */
   --secondary: hsl(207 30% 95%);
-  --secondary-foreground: hsl(207 100% 20%);
+  --secondary-foreground: oklch(0.98 0.01 90);
 
   --muted: oklch(0.95 0.01 240);
   --muted-foreground: oklch(0.50 0.02 240);
@@ -128,7 +128,7 @@
 
   /* Secondary & Muted - Soft Blues to complement the Navy */
   --secondary: hsl(207 30% 95%);
-  --secondary-foreground: hsl(207 100% 20%);
+  --secondary-foreground: oklch(0.98 0.01 90);
 
   --muted: oklch(0.95 0.01 240);
   --muted-foreground: oklch(0.50 0.02 240);
