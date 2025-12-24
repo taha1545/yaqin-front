@@ -82,58 +82,64 @@
 }
 
 .dark {
-  --background: oklch(1.0000 0 0);
-  --foreground: oklch(0.2150 0.0025 325.6623);
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(220 15% 10%);
-  --popover: oklch(1.0000 0 0);
-  --popover-foreground: oklch(0.2150 0.0025 325.6623);
-  --primary: hsl(170, 50%, 45%);
-  --primary-foreground: hsl(0%, 0%, 100%);
-  --secondary: hsl(210, 20%, 96%);
-  --secondary-foreground: hsl(220, 15%, 20%);
-  --muted: oklch(0.9702 0 0);
-  --muted-foreground: oklch(0.5555 0 0);
-  --accent: oklch(0.9702 0 0);
-  --accent-foreground: oklch(0.2150 0.0025 325.6623);
-  --destructive: oklch(0.7679 0.2186 133.5103);
-  --destructive-foreground: oklch(1.0000 0 0);
-  --border: oklch(0.9219 0 0);
-  --input: oklch(0.9219 0 0);
-  --ring: oklch(0.7090 0 0);
-  --chart-1: oklch(0.8074 0.1772 330.4809);
-  --chart-2: oklch(0.6828 0.2625 337.0826);
-  --chart-3: oklch(0.6485 0.2610 341.9454);
-  --chart-4: oklch(0.5982 0.2428 344.5060);
-  --chart-5: oklch(0.5080 0.1941 346.1768);
-  --sidebar: oklch(0.9851 0 0);
-  --sidebar-foreground: oklch(0.2150 0.0025 325.6623);
-  --sidebar-primary: oklch(0.2150 0.0025 325.6623);
-  --sidebar-primary-foreground: oklch(0.9851 0 0);
-  --sidebar-accent: oklch(0.9702 0 0);
-  --sidebar-accent-foreground: oklch(0.2150 0.0025 325.6623);
-  --sidebar-border: oklch(0.9219 0 0);
-  --sidebar-ring: oklch(0.7090 0 0);
-  --font-sans: Akshar, ui-sans-serif, sans-serif, system-ui;
-  --font-serif: Alegreya, ui-serif, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --radius: 0.625rem;
-  --shadow-x: -3.5px;
-  --shadow-y: 1px;
-  --shadow-blur: 4.5px;
-  --shadow-spread: -25px;
-  --shadow-opacity: 0.35;
-  --shadow-color: oklch(0 0 0);
-  --shadow-2xs: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.17);
-  --shadow-xs: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.17);
-  --shadow-sm: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.35), -3.5px 1px 2px -26px hsl(0 0% 0% / 0.35);
-  --shadow: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.35), -3.5px 1px 2px -26px hsl(0 0% 0% / 0.35);
-  --shadow-md: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.35), -3.5px 2px 4px -26px hsl(0 0% 0% / 0.35);
-  --shadow-lg: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.35), -3.5px 4px 6px -26px hsl(0 0% 0% / 0.35);
-  --shadow-xl: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.35), -3.5px 8px 10px -26px hsl(0 0% 0% / 0.35);
-  --shadow-2xl: -3.5px 1px 4.5px -25px hsl(0 0% 0% / 0.88);
-  --tracking-normal: -0.025em;
-  --spacing: 0.23rem;
+  --primary: hsl(207 100% 17%);
+  /* Deep Navy Blue #003057 */
+  --primary-foreground: hsl(0 0% 100%);
+
+  --accent: hsl(55 100% 50%);
+  /* Bright Logo Yellow #FFEC00 */
+  --accent-foreground: hsl(207 100% 10%);
+
+  /* Backgrounds & Surfaces - Using a "Warm" white for a friendly feel */
+  --background: oklch(0.98 0.01 90);
+  --foreground: oklch(0.25 0.02 240);
+
+  --card: oklch(94.251% 0.00755 16.511);
+  --card-foreground: hsl(207 100% 10%);
+
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(207 100% 10%);
+
+  /* Secondary & Muted - Soft Blues to complement the Navy */
+  --secondary: hsl(207 30% 95%);
+  --secondary-foreground: hsl(207 100% 20%);
+
+  --muted: oklch(0.95 0.01 240);
+  --muted-foreground: oklch(0.50 0.02 240);
+
+  /* Status Colors - Corrected Logic */
+  --destructive: oklch(0.60 0.18 25);
+  /* Professional Red */
+  --destructive-foreground: 0 0% 100%;
+
+  /* Borders & UI Elements */
+  --border: oklch(0.90 0.01 240);
+  --input: oklch(0.90 0.01 240);
+  --ring: hsl(207 100% 17%);
+
+  /* Typography - Optimized for Arabic/English harmony */
+  --font-sans: 'Readex Pro', 'Tajawal', Akshar, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Refined Geometry */
+  --radius: 0.75rem;
+  /* Slightly rounder for a child-friendly feel */
+  --spacing: 0.25rem;
+
+  /* Simplified Natural Shadows (Light from top-center) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Offset for the sticky header so the section title isn't hidden */
+  section {
+    scroll-margin-top: 5rem;
+  }
 }
 
 @layer base {
